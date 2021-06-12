@@ -1,0 +1,228 @@
+body {
+    color: #FFFFFF;
+    margin: 0;
+    font-family: circularMedium;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+}
+
+.corpo {
+    width: 60%;
+    margin: auto;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+}
+
+.headLine h1 {
+    text-align: center;
+    margin: auto;
+    letter-spacing: 2px;
+}
+
+.grade-imagens {
+    padding: 5vh 0;
+    display: flex;
+}
+
+.item-grade {
+    width: 20%;
+    margin: auto;
+    text-align: center;
+}
+
+.btn-checkout {
+    padding-top: 3vh;
+    margin: auto;
+    width: fit-content;
+}
+
+.total-vagas {
+    width: fit-content;
+    margin: auto;
+}
+
+.qntd-vagas {
+    margin-top: 1vh;
+}
+
+.qntd-vagas p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.num-vagas {
+    padding: 10px 15px;
+    font-size: 35px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.headline-title h1 {
+    text-align: justify;
+    margin: auto;
+    letter-spacing: 2px;
+}
+
+.grade-fotos {
+    display: flex;
+    margin-top: 6vh;
+}
+
+.div-foto {
+    width: 30%;
+    margin: auto;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.valor-operacao {
+    margin-top: 2vh;
+    padding: 10px 15px;
+    font-size: 35px;
+    width: fit-content;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.operacao-texto {
+    opacity: 0.5;
+}
+
+.card-beneficios {
+    width: 60%;
+    margin-left: auto;
+    min-height: 200px;
+}
+
+.beneficios-header {
+    background: linear-gradient(106deg, #FB1842 0%, #D74509 100%) 0% 0% no-repeat padding-box;
+    border-radius: 20px 20px 0 0;
+    min-height: 80px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.beneficios-body {
+    border-radius: 0 0 20px 20px;
+    background-color: #212121;
+}
+
+.lista-beneficios {
+    padding: 0;
+    width: fit-content;
+    margin: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.lista-beneficios li {
+    margin: 1vh 0;
+}
+
+.texto-garantia {
+    opacity: 0.5;
+    margin-bottom: 5vh;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pedro-salim {
+    width: 70%;
+}
+
+.pedro-salim p {
+    font-size: 20px;
+    opacity: 0.5;
+    margin: 0 0 0 1vw;
+    line-height: 30px;
+}
+
+.texto-pastel {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 5vh;
+}
+
+.texto-pastel span {
+    opacity: 0.5;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #FB1842 0%, #D74509 100%) 0% 0% no-repeat padding-box;
+    font-size: 24px;
+    padding: 30px 70px;
+    border-radius: 20px;
+}
+
+
+/* COLS */
+
+.col6 {
+    width: 50%;
+}
+
+.col4 {
+    width: 33%;
+    margin: auto;
+}
+
+
+/* BACKGROUNDS */
+
+.background-black {
+    background-color: #000000;
+}
+
+.background-grey {
+    background-color: #101010;
+}
+
+.background-grey-2 {
+    background-color: #212121;
+}
+
+
+/* FONTS */
+
+@font-face {
+    font-family: circularMedium;
+    src: url('fonts/CircularStd-Medium.otf');
+}
