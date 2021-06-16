@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/upsell-combo.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+</head>
+
+<body>
+
+    <div class="background-gradiente-orange headline">
+        <div class="headline-text">
+            <h3><i class="fas fa-exclamation-triangle"></i> Cuidado! Não feche essa página ainda.</h3>
+        </div>
+    </div>
+
+    <div class="background-black">
+        <div class="corpo">
+            <div class="header">
+                <img src="img/placa-espere.png">
+            </div>
+            <!-- TODO VIDEO -->
+
+
+            <div class="btn-checkout">
+                <h1>
+                    <span class="text-background-green">Vou te dar R$857 aqui e agora!</span>
+                </h1>
+
+                <div class="lista-icones">
+                    <div class="row-icone">
+                        <img src="img/icone-telefone.png">
+                        <p>
+                            Apenas aqui nessa página eu vou liberar para você a mesma ligação por vídeo que faço com meus clientes ao redor do mundo, que você viu anteriormente por R$597,00 com um desconto exclusivo...
+                        </p>
+                    </div>
+                    <div class="row-icone">
+                        <img src="img/icone-moedas.png">
+                        <p>
+                            Você também viu a ferramenta restrita com a equação matemática que faz ganhar mais dinheiro com criptomoedas, mais minha estratégia por R$797,00, mas aqui nessa página você também terá um desconto aplicado para três meses...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="texto-desconto">
+                    <p>
+                        Você está recebendo um voucher de R$857,00 para potencializar os seus resultados, com um desconto único e exclusivo que você não encontrará em nenhum outro lugar.
+                    </p>
+                    <p>
+                        O que significa que eu estou te oferecendo a oportunidade de levar esse combo a mais por um preço diário de menos de 5 reais se dividirmos por três meses…
+                    </p>
+                    <p>
+                        Clique logo abaixo em "SIM, QUERO GANHAR SEMPRE" para receber acesso ao combo que te fará ter muito mais dinheiro na sua conta!
+                    </p>
+                </div>
+
+                <!-- HOTMART - Upsell Widget -->
+                <div id="box_hotmart"></div>
+                <script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
+
+                <script>
+                    opts = {
+                        key: 'USL-49951-121798-b7faae0c22d5d7315f7789afc2e496f0',
+                        width: '650',
+                        height: '420'
+                    }
+                    Upsell.Widget.show(opts);
+                </script>
+                <!-- HOTMART - Upsell Widget [end] -->
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

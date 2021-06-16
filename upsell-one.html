@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/upsell-tool.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+</head>
+
+<body>
+
+    <div class="background-gradiente-orange headline">
+        <div class="headline-text">
+            <h3><i class="fas fa-exclamation-triangle"></i> Etapa 1 de 2:</h3>
+            <p>Atenção, não feche ou atualize essa página, isso pode gerar erros na sua compra.</p>
+        </div>
+    </div>
+
+    <div class="background-black">
+        <div class="corpo">
+            <div class="headline-title">
+                <h1 style="text-align:center;">
+                    Veja como a fórmula matemática da bomba atômica <span class="text-background-green">vai explodir dinheiro na sua conta:</span>
+                </h1>
+            </div>
+
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/CPFrNuHKYTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="btn-checkout">
+                <h2>Oferta única e exclusiva desta página por apenas:</h2>
+                <h1>
+                    <span class="text-background-green">R$66 em 12x ou R$797 à vista</span>
+                </h1>
+                <!-- HOTMART - Upsell Widget -->
+                <div id="box_hotmart"></div>
+                <script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
+
+                <script>
+                    opts = {
+                        key: 'USL-49951-119639-8beedf2736351030fac0e5a71218b83d',
+                        width: '650',
+                        height: '420'
+                    }
+                    Upsell.Widget.show(opts);
+                </script>
+                <!-- HOTMART - Upsell Widget [end] -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="background-black">
+        <div class="corpo">
+            <div class="headline-title">
+                <h1 style="text-align: center;">Um arsenal de resultados com a estratégia de Bitcoin e com a ferramenta da bomba atômica</h1>
+            </div>
+            <div class="grade-fotos">
+                <div class="div-foto background-grey-2"></div>
+                <div class="div-foto background-grey-2"></div>
+                <div class="div-foto background-grey-2"></div>
+            </div>
+            <div class="grade-fotos">
+                <div class="div-foto background-grey-2"></div>
+                <div class="div-foto background-grey-2"></div>
+                <div class="div-foto background-grey-2"></div>
+            </div>
+            <div class="btn-checkout">
+                <div style="margin-top:4vh;" class="btn btn-green">
+                    Sim, quero mais dinheiro na conta!
+                </div>
+                <br>
+                <div style="margin-top:4vh;" class="btn btn-grey">
+                    Não, não quero ter muito dinheiro!
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

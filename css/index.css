@@ -1,31 +1,8 @@
-body {
-    color: #FFFFFF;
-    margin: 0;
-    font-family: circularMedium;
-}
-
-h1 {
-    font-size: 40px;
-}
-
 .header {
     text-align: center;
     width: 100%;
     padding-top: 7vh;
     padding-bottom: 7vh;
-}
-
-.corpo {
-    width: 60%;
-    margin: auto;
-    padding-top: 7vh;
-    padding-bottom: 7vh;
-}
-
-.headLine h1 {
-    text-align: center;
-    margin: auto;
-    letter-spacing: 2px;
 }
 
 .grade-imagens {
@@ -68,22 +45,13 @@ h1 {
     text-align: center;
 }
 
-.headline-title h1 {
-    text-align: justify;
-    margin: auto;
-    letter-spacing: 2px;
-}
-
 .grade-fotos {
     display: flex;
     margin-top: 6vh;
 }
 
-.div-foto {
-    width: 30%;
-    margin: auto;
-    height: 150px;
-    border-radius: 20px;
+.grade-fotos img {
+    width: 100%;
 }
 
 .valor-operacao {
@@ -130,6 +98,26 @@ h1 {
     margin: 1vh 0;
 }
 
+.lista-caracteristicas {
+    display: flex;
+    margin-top: 5vh;
+}
+
+.texto-membros {
+    opacity: 0.5;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.img-membros {
+    background-image: url("../img/cards-membros.png");
+    background-position: center;
+    background-size: cover;
+    height: 1200px;
+}
+
 .texto-garantia {
     opacity: 0.5;
     margin-bottom: 5vh;
@@ -160,69 +148,82 @@ h1 {
     opacity: 0.5;
 }
 
-
-/* BUTTONS */
-
-.btn {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid transparent;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    border-radius: 4px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.footer {
+    padding: 5vh 10vh;
 }
 
-.btn-primary {
-    background: linear-gradient(90deg, #FB1842 0%, #D74509 100%) 0% 0% no-repeat padding-box;
-    font-size: 24px;
-    padding: 30px 70px;
-    border-radius: 20px;
+.footer p {
+    color: #FFFFFF;
+    opacity: 0.5;
 }
 
+.footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
-/* COLS */
-
-.col6 {
+.footer .grade-icons {
     width: 50%;
-}
-
-.col4 {
-    width: 33%;
     margin: auto;
 }
 
-
-/* BACKGROUNDS */
-
-.background-black {
-    background-color: #000000;
+.footer .grade-icons .div-icon {
+    width: fit-content;
+    background: #212121;
+    padding: 15px 20px;
+    font-size: 25px;
+    border-radius: 15px;
+    margin: auto;
 }
 
-.background-grey {
-    background-color: #101010;
-}
-
-.background-grey-2 {
-    background-color: #212121;
-}
-
-
-/* FONTS */
-
-@font-face {
-    font-family: circularMedium;
-    src: url('fonts/CircularStd-Medium.otf');
+@media (max-width: 768px) {
+    .grade-imagens {
+        display: block;
+    }
+    .item-grade {
+        width: 60%;
+    }
+    .card-beneficios {
+        width: 80%;
+        margin: auto;
+        margin-top: 5vh;
+    }
+    .texto-membros {
+        width: 90%;
+    }
+    .img-membros {
+        height: 450px;
+    }
+    .header img {
+        width: 40%;
+    }
+    .texto-garantia {
+        font-size: 14px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5vh;
+    }
+    .pedro-salim {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .pedro-salim p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .img-pedro-salim {
+        background-image: url("../img/salim-mobile.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        margin-top: 3vh;
+    }
+    .texto-pastel {
+        width: 90%;
+    }
+    .footer {
+        padding: 5vh 3vw;
+        text-align: center;
+    }
 }

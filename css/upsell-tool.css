@@ -1,0 +1,57 @@
+.headline {
+    width: 100%;
+    height: auto;
+    padding: 2vh 0 3vh;
+}
+
+.headline-text {
+    width: 50%;
+    margin: auto;
+}
+
+.headline-text h3 {
+    margin: 0;
+    margin-bottom: 1vh;
+}
+
+.headline-text p {
+    margin: 0;
+}
+
+.btn-checkout {
+    text-align: center;
+}
+
+.grade-fotos {
+    display: flex;
+    margin-top: 6vh;
+}
+
+.div-foto {
+    width: 30%;
+    margin: auto;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.video {
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: fit-content;
+}
+
+.video iframe {
+    width: 45vw;
+    height: 50vh;
+}
+
+@media (max-width: 768px) {
+    .headline-text {
+        width: 90%;
+    }
+    .video iframe {
+        width: 90vw;
+        height: 30vh;
+    }
+}
