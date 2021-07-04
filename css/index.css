@@ -7,7 +7,7 @@
 
 .grade-imagens {
     padding: 5vh 0;
-    display: flex;
+    display: flex!important;
 }
 
 .item-grade {
@@ -68,7 +68,7 @@
 }
 
 .card-beneficios {
-    width: 60%;
+    width: 80%;
     margin-left: auto;
     min-height: 200px;
 }
@@ -109,6 +109,7 @@
     margin: auto;
     text-align: center;
     margin-bottom: 10vh;
+    font-size: 18px;
 }
 
 .img-membros {
@@ -176,7 +177,40 @@
     margin: auto;
 }
 
+.arrows {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.arrows i {
+    font-size: 30px;
+}
+
+.video {
+    width: 100%;
+    text-align: center;
+}
+
+.video iframe {
+    width: 45vw;
+    height: 50vh;
+}
+
+.bg-pastel-suco {
+    background-image: url(../img/bg-pastel-suco.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
 @media (max-width: 768px) {
+    .bg-pastel-suco {
+        background-image: none;
+    }
+    .video iframe {
+        width: 90vw;
+        height: 30vh;
+    }
     .grade-imagens {
         display: block;
     }
@@ -195,7 +229,7 @@
         height: 450px;
     }
     .header img {
-        width: 40%;
+        width: 60%;
     }
     .texto-garantia {
         font-size: 14px;

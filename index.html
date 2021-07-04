@@ -8,6 +8,8 @@
     <title>Document</title>
 
     <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="slick/slick.css">
+
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="fa/css/all.css">
@@ -15,7 +17,7 @@
 
 <body>
     <div class="background-black">
-        <div class="corpo">
+        <div style="padding-bottom:1vh;" class="corpo">
             <div class="header">
                 <img src="img/logo.png">
             </div>
@@ -24,7 +26,66 @@
                 <h1>Crie uma <span class="text-background-orange">nova realidade financeira</span> para a sua família com analistas de grandes bancos operando<span class="text-background-orange"> diretamente na sua conta</span></h1>
             </div>
 
-            <div class="grade-imagens">
+            <div class="d-xs-none grade-imagens">
+                <div class="item-grade">
+                    <img src="img/dinheiro_curto.png">
+                    <p>Mesmo você com o dinheiro curto no mês inteiro.</p>
+                </div>
+                <div class="item-grade">
+                    <img src="img/nao_entende.png">
+                    <p>Mesmo sem você entender nada sobre o assunto.</p>
+                </div>
+                <div class="item-grade">
+                    <img src="img/sem_tempo.png">
+                    <p>Mesmo sem você tempo e dificuldade para aprender.</p>
+                </div>
+            </div>
+            <div style="text-align: center;" class="d-md-none btn-checkout">
+                <div class="total-vagas">
+                    <div style="display: flex;">
+                        <img style="height:1%;" src="img/icon-info.png">
+                        <p style="margin: 0.5vh;">Somente 500 vagas!</p>
+                    </div>
+                </div>
+                <div class="qntd-vagas">
+                    <div class="num-vagas background-grey-2">
+                        422
+                    </div>
+                    <p>Vagas restantes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="video background-black-grey">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CPFrNuHKYTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="background-grey">
+        <div style="padding-top:1vh;" class="corpo">
+
+            <div style="text-align:center;">
+                <div class="btn-checkout">
+                    <div class="d-xs-none total-vagas">
+                        <div style="display: flex;">
+                            <img style="height:1%;" src="img/icon-info.png">
+                            <p style="margin: 0.5vh;">Somente 500 vagas!</p>
+                        </div>
+                    </div>
+                    <div class="d-xs-none qntd-vagas">
+                        <div class="num-vagas background-grey-2">
+                            422
+                        </div>
+                        <p>Vagas restantes</p>
+                    </div>
+                    <div onclick="abrirCheckout();" style="margin-top:4vh;" class="btn btn-orange">
+                        Quero viver do mercado financeiro!
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-md-none grade-imagens">
                 <div class="item-grade">
                     <img src="img/dinheiro_curto.png">
                     <p>Mesmo você com o dinheiro curto no mês inteiro.</p>
@@ -41,45 +102,25 @@
         </div>
     </div>
 
-    <div class="background-grey">
-        <div class="corpo">
-            <div style="text-align: center;">
-                <div class="btn-checkout">
-                    <div class="total-vagas">
-                        <div style="display: flex;">
-                            <img style="height:1%;" src="img/icon-info.png">
-                            <p style="margin: 0.5vh;">Somente 500 vagas!</p>
-                        </div>
-                    </div>
-                    <div class="qntd-vagas">
-                        <div class="num-vagas background-grey-2">
-                            312
-                        </div>
-                        <p>Vagas restantes</p>
-                    </div>
-                    <div onclick="abrirCheckout();" style="margin-top:4vh;" class="btn btn-orange">
-                        Quero viver do mercado financeiro!
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="background-black">
         <div class="corpo">
             <div class="headline-title">
                 <h1>Tenha o resultado com forex de um analista com 100 milhões de reais movimentados operando por você:</h1>
             </div>
             <div class="grade-fotos">
-                <div class="col30">
+                <div class="slick-img col30">
                     <img src="img/grade-index-1.png" alt="">
                 </div>
-                <div class="col30">
-                    <img src="img/grade-index-1.png" alt="">
+                <div class="slick-img col30">
+                    <img src="img/grade-index-2.png" alt="">
                 </div>
-                <div class="col30">
-                    <img src="img/grade-index-1.png" alt="">
+                <div class="slick-img col30">
+                    <img src="img/grade-index-3.png" alt="">
                 </div>
+            </div>
+            <div class="d-md-none arrows">
+                <i onclick="prevSlick();" class="fas fa-caret-square-left"></i>
+                <i onclick="nextSlick();" class="fas fa-caret-square-right"></i>
             </div>
             <div class="btn-checkout">
                 <div onclick="abrirCheckout();" style="margin-top:4vh;" class="btn btn-orange">
@@ -195,7 +236,7 @@
 
     <div class="background-black">
         <div class="headline-title">
-            <h1 style="text-align:center;padding:7vh 0;">SALIMFLIX</h1>
+            <h1 style="text-align:center;padding:4vh 0;">SALIMFLIX</h1>
         </div>
         <p class="texto-membros">
             Você terá acesso imediato a área de membros com produção cinematográfica no estilo Netflix com alta qualidade e didática do próprio Salim. Tudo pensado para que você possa entender os conceitos essenciais do mercado e como extrair o máximo das operações
@@ -225,7 +266,7 @@
                 </div>
                 <div class="qntd-vagas">
                     <div class="num-vagas background-grey-2">
-                        312
+                        422
                     </div>
                     <p>Vagas restantes</p>
                 </div>
@@ -265,23 +306,26 @@
                 </div>
             </div>
         </div>
-        <div class="corpo">
-            <div class="headline-title">
-                <h1 style="text-align:center;margin:5vh 0;"><span class="text-background-orange">Agora é com você:</span><br> Quer melhorar a sua vida e da sua família pelo preço de um pastel com suco?</h1>
-            </div>
-            <p class="texto-pastel">
-                <span>
+        <div class="bg-pastel-suco">
+            <div class="corpo">
+                <div class="headline-title">
+                    <h1 style="text-align:center;margin:5vh 0;"><span class="text-background-orange">Agora é com você:</span><br> Quer melhorar a sua vida e da sua família pelo preço de um pastel com suco?</h1>
+                </div>
+                <p class="texto-pastel">
+                    <span>
                     Colocando na ponta do lápis, o investimento de hoje para ter o Salim operando diretamente na sua conta é de
                 </span> apenas R$2,70 por dia.
-            </p>
-            <p class="texto-pastel">
-                <span>
+                </p>
+                <p class="texto-pastel">
+                    <span>
                     Isso nos lanchonetes mais baratas na sua cidade é o</span> preço de um pastel frio com um suco aguado. <span>Mas a decisão é sua: Quer ou não quer mudar a sua vida pelo preço mais barato de um lanche?
                 </span>
-            </p>
-            <div class="btn-checkout">
-                <div onclick="abrirCheckout();" style="margin-top:2vh;" class="btn btn-orange">
-                    Quero viver do mercado financeiro!
+                </p>
+                <div class="btn-checkout">
+                    <div onclick="abrirCheckout();" style="margin-top:2vh;" class="btn btn-orange">
+                        Quero viver do mercado financeiro!
+                    </div>
+                    <p style="text-align:center;color:#e92f26;font-weight:bold;">Só R$2,70 por dia</p>
                 </div>
             </div>
         </div>
@@ -329,6 +373,8 @@
 
     <!-- IMPORT JS -->
 
+    <script src="jquery/jquery.js"></script>
+    <script src="slick/slick.min.js"></script>
     <script src="js/index.js"></script>
 
 </body>

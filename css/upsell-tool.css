@@ -30,8 +30,12 @@
 .div-foto {
     width: 30%;
     margin: auto;
-    height: 150px;
+    height: fit-content;
     border-radius: 20px;
+}
+
+.div-foto img {
+    width: 100%;
 }
 
 .video {
@@ -53,5 +57,14 @@
     .video iframe {
         width: 90vw;
         height: 30vh;
+    }
+    .grade-fotos {
+        display: block;
+    }
+    .div-foto {
+        width: 90%;
+    }
+    .div-foto img {
+        width: 100%;
     }
 }
